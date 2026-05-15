@@ -1,7 +1,7 @@
 # libraryapi
 
-[![npm](https://img.shields.io/npm/v/libraryapi.svg)](https://www.npmjs.com/package/libraryapi)
-[![Node](https://img.shields.io/node/v/libraryapi.svg)](https://www.npmjs.com/package/libraryapi)
+[![npm](https://img.shields.io/npm/v/libraryapi-sdk.svg)](https://www.npmjs.com/package/libraryapi-sdk)
+[![Node](https://img.shields.io/node/v/libraryapi-sdk.svg)](https://www.npmjs.com/package/libraryapi-sdk)
 
 Official Node.js + TypeScript SDK for [libraryapi.dev](https://libraryapi.dev) — US public library facility, hours, services, and statistics data from the federal IMLS Public Libraries Survey. **9,252 systems · 17,586 outlets · FY 2023.**
 
@@ -10,14 +10,17 @@ Zero runtime dependencies. Native `fetch`. Works in Node 18+, Cloudflare Workers
 ## Install
 
 ```bash
-npm install libraryapi
+npm install libraryapi-sdk
 ```
+
+> **Note on naming:** the bare `libraryapi` name is taken on npm by an unrelated
+> project. We publish as `libraryapi-sdk`. Same applies to the Python SDK.
 
 ## Quickstart
 
 ```js
-const { LibraryAPI } = require('libraryapi');
-// or: import { LibraryAPI } from 'libraryapi';
+const { LibraryAPI } = require('libraryapi-sdk');
+// or: import { LibraryAPI } from 'libraryapi-sdk';
 
 const client = new LibraryAPI('sk_live_...');  // https://libraryapi.dev/pricing
 
@@ -46,7 +49,7 @@ console.log(ca.totals.librarySystems, ca.totals.outlets); // 186 1192
 Full type definitions ship in the package — no `@types/...` install needed.
 
 ```ts
-import { LibraryAPI, Outlet, NotFoundError } from 'libraryapi';
+import { LibraryAPI, Outlet, NotFoundError } from 'libraryapi-sdk';
 
 const client = new LibraryAPI(process.env.LIBRARYAPI_KEY!);
 

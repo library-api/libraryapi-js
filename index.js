@@ -19,7 +19,7 @@ const BASE_URL = 'https://api.libraryapi.dev';
  * Requires Node.js 18+, Cloudflare Workers, Deno, or any environment with native fetch.
  *
  * @example
- * const { LibraryAPI } = require('libraryapi');
+ * const { LibraryAPI } = require('libraryapi-sdk');
  * const client = new LibraryAPI('sk_live_...');
  *
  * const outlets = await client.outlets.near({

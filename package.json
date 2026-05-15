@@ -1,7 +1,7 @@
 {
-  "name": "libraryapi",
+  "name": "libraryapi-sdk",
   "version": "0.1.0",
-  "description": "Official Node.js SDK for libraryapi.dev — US public library facility, hours, services, and statistics data",
+  "description": "Official Node.js SDK for libraryapi.dev — US public library facility, hours, services, and statistics data. Install: npm i libraryapi-sdk · Import: require('libraryapi-sdk')",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
