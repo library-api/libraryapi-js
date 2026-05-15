@@ -1,0 +1,39 @@
+{
+  "name": "libraryapi",
+  "version": "0.1.0",
+  "description": "Official Node.js SDK for libraryapi.dev — US public library facility, hours, services, and statistics data",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node test/smoke.js"
+  },
+  "keywords": [
+    "public-library",
+    "libraries",
+    "imls",
+    "pls",
+    "api",
+    "sdk",
+    "geocoding"
+  ],
+  "author": "libraryapi <hello@libraryapi.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/library-api/libraryapi-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/library-api/libraryapi-js/issues"
+  },
+  "homepage": "https://libraryapi.dev",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
